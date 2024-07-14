@@ -1,0 +1,139 @@
+@import url('https://db.onlinewebfonts.com/c/4944f4308352f169f622b1f098fa2203?family=Formula1+Display+Wide');
+
+body {
+    font-family: "Formula1 Display Wide", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: black; 
+    color: red; 
+    transition: color 0.3s ease; 
+}
+
+
+.driver-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.driver {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 1100px;
+    margin: 20px;
+}
+
+.img {
+    flex: 1;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.driver-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.driver-info p {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.driver-info span {
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+}
+
+#lh {
+    background-image: linear-gradient(180deg, #316F6F, #30706F, #2C6362, #285454, #264E4C, #203E3E, #172B2B);
+}
+
+#cl {
+    background-image: linear-gradient(180deg, #702A3E, #702A3E, #68283B, #5C2436, #542330, #411E28, #2F161E);
+}
+
+#mv {
+    background-image: linear-gradient(180deg, #34466A, #36486C, #324365, #2F3E5D, #2B3955, #26344B, #1C2437);
+}
+
+#vb {
+    background-image: linear-gradient(180deg, #236B2E, #24692F, #246C2F, #246C2F, #23642B, #205928, #1E4E25, #1C3F21, #142C16);
+}
+
+#dr {
+    background-image: linear-gradient(180deg, #415062, #415062, #3E4D5F, #394859, #384554, #34414E, #2F3842, #212830);
+}
+
+#ln {
+    background-image: linear-gradient(180deg, #6F4B37, #704C38, #6F4B37, #694733, #654432, #62412F, #5E402D, #5A3C2B, #3E2A1C);
+}
+
+
+@media screen and (max-width: 768px) {
+    .driver {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .driver .img {
+        order: 1; 
+    }
+
+    .driver .driver-info {
+        order: 2;
+        padding: 20px 0; 
+        text-align: center; 
+    }
+
+    .driver .driver-info p {
+        margin: 10px 0;
+        font-size: 14px; 
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .back {
+        display: none;
+    }
+}

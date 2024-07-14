@@ -1,0 +1,149 @@
+@import url(https://db.onlinewebfonts.com/c/4944f4308352f169f622b1f098fa2203?family=Formula1+Display+Wide);
+
+body {
+    min-height: 100vh;
+    width: 80%;
+    font-family: "Formula1 Display Wide";
+    margin: auto;
+    background-color: #F6F4F0;
+    overflow-y: hidden;
+}
+
+.heading {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.hr-top {
+    margin-top: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr-bot {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drivers {
+    text-align: center;
+    margin: 5px;
+}
+
+.whole-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.driver-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.driver-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.driver-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.email {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+    color: white;
+}
+
+#lh {
+    background-image: linear-gradient(180deg, #316F6F, #30706F, #2C6362, #285454, #264E4C, #203E3E, #172B2B);
+}
+
+#cl {
+    background-image: linear-gradient(180deg, #702A3E, #702A3E, #68283B, #5C2436, #542330, #411E28, #2F161E);
+}
+
+#mv {
+    background-image: linear-gradient(180deg, #34466A, #36486C, #324365, #2F3E5D, #2B3955, #26344B, #1C2437);
+}
+
+#vb {
+    background-image: linear-gradient(180deg, #236B2E, #24692F, #246C2F, #246C2F, #23642B, #205928, #1E4E25, #1C3F21, #142C16);
+}
+
+#dr {
+    background-image: linear-gradient(180deg, #415062, #415062, #3E4D5F, #394859, #384554, #34414E, #2F3842, #212830);
+}
+
+#ln {
+    background-image: linear-gradient(180deg, #6F4B37, #704C38, #6F4B37, #694733, #654432, #62412F, #5E402D, #5A3C2B, #3E2A1C);
+}
+
+
+@media (max-width: 1200px) {
+    .whole-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .whole-container {
+        grid-template-columns: 1fr;
+    }
+
+    .driver-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .driver-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .driver-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .email {
+        font-size: 12px;
+    }
+}
+
